@@ -14,7 +14,7 @@ import pandas as pd
 try:
     import pandas as pd
 except ImportError:
-    subprocess.check_call([sys.executable, "-m", "pip", "install", "pandas"])
+    subprocess.check_call([sys.executable, "-m", "pip3", "install", "pandas"])
     import pandas as pd
 
 # Engineering programs AE
