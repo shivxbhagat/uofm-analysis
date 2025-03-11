@@ -90,12 +90,12 @@ for _, row in result.iterrows():
         analysis[i][status][j][2] += hs_avg
 
         # GPA > 3.5
-        if gpa > 3.5:
+        if gpa >= 3.5:
             analysis[i][status][j][3] += gpa
             analysis[i][status][j][4] += 1  # Count of students with GPA > 3.5
 
         # HS Average > 77.78%
-        if hs_avg > 77.78:
+        if hs_avg >= 77.78:
             analysis[i][status][j][5] += hs_avg
             analysis[i][status][j][6] += 1  # Count of students with HS avg > 77.78%
 
@@ -111,10 +111,10 @@ for i, prog in enumerate(programs):
             print(f"  GPA Avg: {data[0] / data[1] if data[1] > 0 else 0}")
             print(f"  High School Avg Sum: {data[2]}")
             print(f"  High School Avg: {data[2] / data[1] if data[1] > 0 else 0}")
-            print(f"  GPA > 3.5 Sum: {data[3]}")
-            print(f"  # of Students with GPA > 3.5: {data[4]}")
-            print(f"  Students with GPA > 3.5 Avg: {data[3] / data[4] if data[4] > 0 else 0}")
-            print(f"  HS Avg > 77.78% Sum: {data[5]}")
-            print(f"  # of Students with HS Avg > 77.78%: {data[6]}")
-            print(f"  Students with HS Avg > 77.78% Avg: {data[5] / data[6] if data[6] > 0 else 0}%")
+            print(f"  GPA >= 3.5 Sum: {data[3]}")
+            print(f"  # of Students with GPA >= 3.5: {data[4]}")
+            print(f"  Students with GPA >= 3.5 Avg: {data[3] / data[4] if data[4] > 0 else 0}")
+            print(f"  HS Avg >= 77.78% Sum: {data[5]}")
+            print(f"  # of Students with HS Avg >= 77.78%: {data[6]}")
+            print(f"  Students with HS Avg >= 77.78% Avg: {data[5] / data[6] if data[6] > 0 else 0}%")
             print("-" * 40)
