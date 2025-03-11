@@ -110,7 +110,7 @@ for i, prog in enumerate(programs):
             print(f"  # of Students: {data[1]}")
             print(f"  GPA Avg: {data[0] / data[1] if data[1] > 0 else 0}")
             print(f"  High School Avg Sum: {data[2]}")
-            print(f"  High School Avg Avg: {data[2] / data[1] if data[1] > 0 else 0}")
+            print(f"  High School Avg: {data[2] / data[1] if data[1] > 0 else 0}")
             print(f"  GPA > 3.5 Sum: {data[3]}")
             print(f"  # of Students with GPA > 3.5: {data[4]}")
             print(f"  Students with GPA > 3.5 Avg: {data[3] / data[4] if data[4] > 0 else 0}")
